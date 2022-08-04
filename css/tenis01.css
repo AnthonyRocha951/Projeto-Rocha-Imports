@@ -1,69 +1,98 @@
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Blaka+Hollow&family=Holtwood+One+SC&family=Rubik+Glitch&display=swap');
-
-body {
+body, h1, h2, p {
     background-color: black;
+    color: white;
 }
 
-.tenis01 {
+main {
     display: flex;
     flex-direction: row;
-    margin-left: 8%;
-    margin-top: 5%;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 5%;
 }
 
-.tenis01 > .produto {
-    width: 40%;
-    border-radius: 20px;
-}
-.tenis01 h1 {
-    font-size: 50px;
-    font-family: 'Rubik Glitch', cursive;
-    padding-left: 140px;
-    color: rgb(255, 255, 255);
-}
-
-.tenis01 p {
-    font-family: 'Bangers', cursive;
+.info-tenis {
     font-size: 20px;
-    padding-top: 3%;
-    padding-left: 19%;
-    padding-right: 20%;
-    color: rgb(170, 164, 164);;
 }
 
-.texto h2 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 55px;
-    padding-top: 1%;
-    padding-left: 30%;
-    padding-right: 20%; 
-    color: #04d9ff;
+.h1-main {
+    font-size: 45px;
+    font-family: sans-serif;
 }
 
-a {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-left: 36%;
-    color: white;
+.texto {
+    color: rgb(170, 164, 164);
+    font-family: 'Franklin Gothic Medium';
+    font-size: 15px;
+}
+
+.h2-main {
+    margin-left: 4%;
+    font-size: 33px;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.voltar {
+    margin-left: 12%;
+    padding-top: 30px;
+}
+
+.img-tenis {
+    border-radius: 2px;
     background-color: #04d9ff;
-    font-size: 35px;
-    text-decoration:none;
-    padding: 13px;
-    border: 5px  #ffffff;
-    border-radius: 25px;
+    padding: 1px;
 }
 
-.botão {
-    text-decoration:none
+button {
+    margin-top: 2px;
+    margin-left: 2%;
 }
 
+button {
+    --glow-color:#04d9ff;
+    --glow-spread-color: rgba(230, 230, 230, 0.781);
+    --enhanced-glow-color: rgb(231, 206, 255);
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 1em 1em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+   }
+   
+   button::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.em) rotateX(35deg) scale(1, .6);
+   }
+   
+   button:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 2em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+   }
+   
+   button:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+           0 0 2.5em 2em var(--glow-spread-color),
+           inset 0 0 .5em .25em var(--glow-color);
+   }
 
-.produto {
-    background-color: #a4f1ff;
-    padding: 3px;
-}
-
-a:hover {
-    background-color: #ffffff;
-    color: #04d9ff;
-    border: 5px solid #04d9ff;
-}
