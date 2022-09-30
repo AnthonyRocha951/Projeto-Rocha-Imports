@@ -28,9 +28,11 @@ a {
     color: white;
 }
 
-a:hover {
+header a:hover {
     border-bottom: 2px white;
-    background-color: 	#C0C0C0;
+    background-color: 	#ffffff50;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .fundo-img {
@@ -83,12 +85,14 @@ img {
 }
 
 .paragrafo {
+    width: 100%;
+    margin: 0px -5px 0px -5px;
     color: white;
-    border-radius: 15px;
     background-color: black;
     text-align: center;
     font-size: 20px;
-    font-family: 'Bangers', cursive;
+    font-weight: normal;
+    font-family: 'Bangers', Arial;
 }
 
 .produto {
